@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <form>
+        <h1 class="text-primary">Calculator</h1>
+        <div class="input"></div>
+        <label for="value1">Enter a value:</label>
+        <input type="number" id="value1" name="value1"><br>
+        <label for="value2">Enter a value:</label>
+        <input type="number" id="value2" name="value2"><br>
+    </div>
+
+        <div class="container-fluid">
+            Select an operation:<br>
+            <button type="button" onclick="return add()" class="btn btn-outline-primary">Add</button>
+            <button type="button" onclick=" return subtract()" class="btn btn-outline-secondary">Subtract</button>
+            <button type="button" onclick="return multiply()" class="btn btn-outline-success">Multiply</button>
+            
+            <button type="button" onclick="return divide()" class="btn btn-outline-danger">Divide</button>
+            <button type="button" onclick="return percentage()" class="btn btn-outline-warning">Percentage</button>
+            <button type="button" onclick="return absolute()" class="btn btn-outline-info">Absolute</button>
+            <button type="button" onclick="return squareRoot()" class="btn btn-outline-dark">Square Root</button>
+           
+        </div>
+        <br>
+        Result: <input type="text" id="res" name="result">
+        <button type="reset" value="reset" class="btn btn-primary">Reset</button>
+        </form>
+
+
+
+
+        <script src="task.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
